@@ -1,0 +1,24 @@
+{
+  "name": "server-for-note-app",
+  "version": "1.0.0",
+  "description": "server versions",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmarasli/notes-server.git"
+  },
+  "author": "dilara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmarasli/notes-server/issues"
+  },
+  "homepage": "https://github.com/dmarasli/notes-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.6"
+  }
+}
