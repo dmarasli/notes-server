@@ -1,0 +1,56 @@
+Last login: Thu Sep 16 16:52:28 on ttys002
+dilara@Dilaras-Air-2 ~ % mongo
+MongoDB shell version v5.0.2
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("b03acbf5-6e21-4f3f-b6a9-599db00b6f82") }
+MongoDB server version: 5.0.2
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+We recommend you begin using "mongosh".
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+	https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+	https://community.mongodb.com
+---
+The server generated these startup warnings when booting: 
+        2021-09-17T10:51:51.352-07:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+newDB   0.000GB
+> use newDB
+switched to db newDB
+> show collections
+datas
+> db.datas.find()
+{ "_id" : ObjectId("6144d87f412bbbf0ec4c244e"), "title" : "\"Test\"", "date" : "\"Test\"", "note" : "\"Test\"", "__v" : 0 }
+> db.datas.find()
+{ "_id" : ObjectId("6144d87f412bbbf0ec4c244e"), "title" : "\"Test\"", "date" : "\"Test\"", "note" : "\"Test\"", "__v" : 0 }
+{ "_id" : ObjectId("6144d971412bbbf0ec4c2450"), "title" : "\"new note\"", "date" : "\"friday\"", "note" : "\"first note\"", "__v" : 0 }
+> db.datas.find()
+{ "_id" : ObjectId("6144d971412bbbf0ec4c2450"), "title" : "\"new note\"", "date" : "\"friday\"", "note" : "\"first note\"", "__v" : 0 }
+> show collections
+datas
+> db.datas.find()
+{ "_id" : ObjectId("6144d971412bbbf0ec4c2450"), "title" : "\"new note\"", "date" : "\"friday\"", "note" : "\"first note\"", "__v" : 0 }
+> 
